@@ -8,14 +8,14 @@
 .contact-us{
     position: relative;
     width: 100%;
-    padding: 40px 100px;
+    padding: 2em 3em;
 }
 
 .contact-us .title{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .contact-us .title h2{
@@ -35,8 +35,8 @@
 }
 
 .contact{
-    padding: 40px;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+    padding: 2em;
+    box-shadow: 0 0.15em 2.2em rgba(0,0,0,0.15);
 }
 
 .box{
@@ -55,7 +55,7 @@
     color: #0e3959;
     font-weight: 500;
     font-size: 1.4em;
-    margin-bottom: 10px;
+    margin-bottom: 0.85em;
 }
 
 .formBox{
@@ -71,7 +71,7 @@
 .inputBox{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
     width: 50%;
 }
 
@@ -80,26 +80,26 @@
 }
 
 .inputBox span{
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 0.75em;
+    margin-bottom: 0.25em;
     font-weight: 500;
 }
 
 .inputBox input{
-    padding: 10px;
+    padding: 0.75em;
     font-size: 1.1em;
     outline: none;
     border: 1px solid #333;
 }
 
 .inputBox textarea{
-    padding: 10px;
+    padding: 0.75em;
     font-size: 1.1em;
     outline: none;
     border: 1px solid #333;
     resize: none;
     min-height: 220px;
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
 }
 
 .inputBox input[type="submit"]{
@@ -110,7 +110,7 @@
     max-width: 120px;
     font-size: 500;
     cursor: pointer;
-    padding: 14px 15px;
+    padding: 1em;
 }
 
 .info{
@@ -125,13 +125,13 @@
 .info .infoBox div{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
 
 }
 
 .info .infoBox div span{
-    min-width: 40px;
-    height: 40px;
+    min-width: 2em;
+    height: 2em;
     color: #fff;
     background: #18b7ff;
     display: flex;
@@ -153,18 +153,18 @@
 }
 
 .sci{
-    margin-top: 40px;
+    margin-top: 2em;
     display: flex;
 }
 
 .sci li{
     list-style: none;
-    margin-right: 15px;
+    margin-right: 1em;
 }
 
 .sci li a{
     color: #fff;
-    font-size: 2em;
+    font-size: 2rem;
     color: #ccc;
 }
 
@@ -184,4 +184,42 @@
 
 /* Media queries */
 
-@media (max-width: 991px)
+@media (max-width: 991px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-us{
+        padding: 0.5em;
+    }
+    
+    .contact{
+        padding: 1em;
+    }
+
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "form"
+        "info"
+        "map";
+    }
+    
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .inputBox{
+        width: 100%;
+    }
+
+    .map{
+        min-height: 300px;
+        padding: 0;
+    }
+
+}
