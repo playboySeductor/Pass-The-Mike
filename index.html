@@ -16,34 +16,34 @@
             <!-- Form-->
             <div class="contact form">
                 <h3><b>Send a Message</b></h3>
-                <form action="">
+                <form action="" id="passthemic">
                     <div class="formBox">
                         <div class="row50">
                             <div class="inputBox">
                                 <span>First Name</span>
-                                <input type="text" placeholder="John">
+                                <input type="text" id="first" placeholder="John" />
                             </div>
                             <div class="inputBox">
                                 <span>Last Name</span>
-                                <input type="text" placeholder="Doe">
+                                <input type="text" id="last" placeholder="Doe" />
                             </div>
                         </div>
 
                         <div class="row50">
                             <div class="inputBox">
                                 <span>Email</span>
-                                <input type="text" placeholder="johndoe@gmail.com">
+                                <input type="text" id="emailid" placeholder="johndoe@gmail.com" />
                             </div>
                             <div class="inputBox">
                                 <span>Mobile</span>
-                                <input type="text" placeholder="+91 654 125 7725">
+                                <input type="text" id="phone" placeholder="+91 654 125 7725" />
                             </div>
                         </div>
 
                         <div class="row100">
                             <div class="inputBox">
                                 <span>Message</span>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here.."></textarea>
+                                <input name="" id="msgContent" cols="30" rows="10" placeholder="Write your message here.." />
                             </div>
                         </div>
 
@@ -89,6 +89,9 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="/js/res.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
