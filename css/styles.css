@@ -12,6 +12,10 @@ h2 {
 
 /* contact */
 
+/* .box{
+    justify-content: center;
+} */
+
 .contact-us {
     max-width: 80%;
     padding: 5em 0;
@@ -205,6 +209,7 @@ h2 {
     .contact-us {
         padding: 3em 0;
         max-width: 90%;
+        margin: auto;
     }
 
     .contact {
@@ -494,6 +499,10 @@ section {
     overflow: hidden;
 }
 
+.row2{
+    margin-top: 5em;
+}
+
 .about {
     padding: 40px 0 0 0;
 }
@@ -720,6 +729,7 @@ section {
 
 @media (min-width: 991px){
     .row2{
+
         max-width: 90%;
         padding: 2em 0;
         margin: auto;
