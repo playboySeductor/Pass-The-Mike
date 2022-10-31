@@ -32,6 +32,10 @@ ul{
     width: 25%;
     padding: 0 15px;
 }
+.contacts-footer {
+    padding: 0 6em;
+}
+
 .footer-col h4{
     font-size: 18px;
     color: antiquewhite;
@@ -71,10 +75,10 @@ ul{
     display: block;
     transition: all 0.3s ease;
 }
-.hl:hover{
+/* .hl:hover{
     color:red;
     padding-left: 10px;
-}
+} */
 
 .footer-col .social-links a{
     display: inline-block;

@@ -202,14 +202,15 @@ h2 {
 }
 
 .sci li a {
-    color: #fff;
+    /* color: #fff; */
     font-size: 2rem;
     color: #ccc;
 }
 
 .sci li a:hover {
     color: #fff;
-
+    font-size: 2.4em;
+    transition: all 0.15s;
 }
 
 .map {
@@ -327,6 +328,14 @@ img {
     transition: all .2s ease-in-out;
     overflow: hidden;
     width: 100%;
+    opacity: 0.75;
+    max-width: 90%;
+}
+
+.team-img img:hover {
+    opacity: 1;
+    max-width: 100%;
+    box-shadow: 0 10px 5px #d32467;
 }
 
 .team-member,
@@ -349,16 +358,9 @@ img {
     margin-top: -5px;
 }
 
-.team-img:hover .overlay {
+/* .team-img:hover .overlay {
     opacity: 1;
-}
-
-.socials a {
-    display: inline-block;
-    width: 37px;
-    height: 37px;
-    background-color: transparent;
-}
+} */
 
 .socials span {
     line-height: 37px;
@@ -378,9 +380,18 @@ img {
     font-size: 20px;
 }
 
-.socials a:hover span {
-    color: rgba(17, 13, 13);
-    background-color: #355c7d;
+.socials a {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    background-color: transparent;
+}
+
+.socials a:hover i {
+    font-size: 1.2em;
+    transform: translateY(-10px); 
+    transition: all 0.1s;
+    
 }
 
 @media(max-width: 768px) {

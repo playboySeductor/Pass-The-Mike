@@ -26,25 +26,28 @@
     <div id="loader" class="loading"></div>
 
     <!-- NAVBAR -->
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <a href="#"><img class="logo" src="images/logo.png" /></a>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#episodes">Episodes</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#contacts">Contact Us</a></li>
-      </ul>
-    </nav>
+    <section id="home" style="padding-top:0;">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="#home"><img class="logo" src="images/logo.png" /></a>
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#episodes">Episodes</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#contacts">Contact Us</a></li>
+        </ul>
+      </nav>
+    </section>
+    
     <!--About the event-->
     <section class="about" id="about">
       <div class="container-fluid">
         <div class="row2">
-          <div class="video-box" style="padding-bottom: 2.5em">
+          <div class="video-box" style="padding: 2.5em 0;">
             <div class="smartphone" data-aos="zoom-in" data-aos-duration="1200">
               <img
                 src="images/ptm-gif.gif"
@@ -749,12 +752,12 @@
               </li>
             </ul>
           </div>
-          <div class="footer-col">
+          <div class="footer-col contacts-footer">
             <h4>Useful Links</h4>
             <ul>
-              <li class="hl"><a href="#">Home</a></li>
-              <li class="hl"><a href="#">About Us</a></li>
-              <li class="hl"><a href="#">Contact</a></li>
+              <li class="hl"><a href="#home">Home</a></li>
+              <li class="hl"><a href="#about">About Us</a></li>
+              <li class="hl"><a href="#contacts">Contacts</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -777,6 +780,8 @@
               <a href="https://www.instagram.com/_ieeeju/"
                 ><i class="fab fa-instagram"></i
               ></a>
+            </div>
+            <div class="social-links">
               <a href="https://www.linkedin.com/company/ieee-ju"
                 ><i class="fab fa-linkedin"></i
               ></a>
