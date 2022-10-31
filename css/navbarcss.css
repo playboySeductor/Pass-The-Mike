@@ -61,6 +61,7 @@ nav ul li a.active, nav ul li a:hover{
     }
 }
 @media (max-width: 858px){
+
     .checkbtn{
         display: block;
     }

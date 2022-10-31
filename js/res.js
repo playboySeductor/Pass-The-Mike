@@ -1,3 +1,9 @@
+var preloader = document.getElementById("loader");
+        function preLoader() {
+            preloader.style.display = "none";
+
+        }
+
 const firebaseConfig = {
     apiKey: "AIzaSyB7YE_AeEMUc_TtVpbuW7sTQ9ccW2YWwjY",
     authDomain: "reg-form-cd759.firebaseapp.com",
@@ -44,3 +50,4 @@ const saveMessages = (first, last, emailid, phone, msgContent) => {
 const getElementVal = (id) => {
     return document.getElementById(id).value;
 };
+
