@@ -8,6 +8,28 @@ body{
     padding:0;
     box-sizing: border-box;
 }
+/* .typewriter{
+    color : black;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid purple;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .14em;
+    animation: typing 3.5s, steps(30, end), blink-caret .5s step-end infinite;
+}
+@keyframes typing{
+    from { width: 0 }
+    to{
+        width: 100%
+    }
+}
+@keyframes blink-caret{
+    from, to{
+        border-color: transparent
+    }
+    50% {border-color: purple}
+} */
 .container{
     max-width: 84%;
     /* background-color: red; */
