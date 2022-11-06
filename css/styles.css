@@ -35,7 +35,11 @@ h2 {
     font-size: clamp(1.2rem ,5vw, 1.25rem);
 }
 
-#contacts h3, #contacts p, #contacts p a{
+#contacts h3{
+    color: #d32467;
+}
+
+#contacts p, #contacts p a{
     color: white;
     font-weight: 400;
 }
