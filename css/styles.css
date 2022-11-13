@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
+    
 }
 
 .loading {
@@ -36,12 +38,15 @@ h2 {
 /* Contact Us */
 
 #contacts{
-    width: min(95%, 80rem);
-    margin-inline: auto;
+    background-color: #fff;
+    
 }
 
 .contact-container{
     font-size: clamp(1.2rem ,5vw, 1.25rem);
+    width: min(95%, 80rem);
+    margin-inline: auto;
+    
 }
 
 #contacts h3{
