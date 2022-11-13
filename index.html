@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/footercss.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/c26d61723c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
   <title>Pass The Mic 2.0</title>
 </head>
 
@@ -21,24 +22,77 @@
   <!-- <div id="loader" class="loading"></div> -->
 
   <!-- NAVBAR -->
-  <section id="home" style="padding-top:0;">
+  <section id="home" class="sticky" style="padding-top:0;">
     <div class="container-nav">
-      <nav>
-        <input type="checkbox" id="check">
+      <nav class="navbar navbar-expand-lg">
+        
+        <a href="#home"><img class="logo" src="images/logo.png" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </button>
+        <!-- <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
           <i class="fa-solid fa-bars"></i>
-        </label>
-        <a href="#home"><img class="logo" src="images/logo.png" /></a>
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#episodes">Episodes</a></li>
-          <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#contacts">Contact Us</a></li>
-        </ul>
+        </label> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#episodes">Episodes</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        
+
+        
       </nav>
     </div>
   </section>
+
+  <!--  Landing Page  -->
+    <div class="landing__page" id="landing__page">
+      <video id="background-video" autoplay loop muted>
+        <source src="images/PTM_bg.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div data-aos="zoom-out" class="landing__text" style="padding-left:20%; padding-top:30%;">
+              <h1><b>Pass The <span style="text-decoration: underline;">Mic</span></b></h1>
+              <h3>Curious Cases Curated !</h3>
+              <button type="button" class="btn btn-primary" style="margin-top:5%;">Live Now</button>
+            </div>
+          </div>
+          <div class="col-lg-5 image__box">
+            <img src="images/hero-img.png" alt="" srcset="" class="animate">
+          </div>
+        </div>
+      </div>
+      <div class="wave__anime">
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28 " preserveAspectRatio="none" style="overflow-x : hidden;">
+  
+          <defs>
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+          </defs>
+          <g class="wave1">
+            <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+            </use>
+          </g>
+          <g class="wave2">
+            <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+            </use>
+          </g>
+          <g class="wave3">
+            <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+            </use>
+          </g>
+        </svg>
+      </div>
+    </div>
+  
 
   <!--About the event-->
   <section class="about" id="about">
@@ -616,8 +670,8 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <footer class="footer">
-    <div class="container">
-      <div class="row">
+    <div class="footer-container">
+      <div class="footer-row">
         <div class="footer-col">
           <h4>IEEE JUSB</h4>
           <ul>
@@ -667,6 +721,10 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
   <script src="js/navbar-js.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

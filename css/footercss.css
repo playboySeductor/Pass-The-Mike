@@ -30,12 +30,12 @@ body{
     }
     50% {border-color: purple}
 } */
-.container{
+.footer-container{
     max-width: 84%;
     /* background-color: red; */
     margin: auto;
 }
-.row{
+.footer-row{
     display: flex;
     flex-wrap: wrap;
 }
